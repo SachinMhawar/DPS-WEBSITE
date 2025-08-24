@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enquiry Form</title>
+  <!-- Link external CSS -->
+  <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+
+
+    
+  <!-- Navbar Section -->
+  <header class="navbar">
+    <div class="navbar-left">
+      <img src="images/logo-img.png" alt="DPS Logo">
+    </div>
+
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+
+    <nav class="navbar-right">
+      <a href="index.html">Home</a>
+      
+      
+   <div class="dropdown">
+  <a href="#">DPS Family ▼</a>
+  <div class="dropdown-content">
+    <a href="#">DPS Society</a>
+    <a href="#">Vision And Mission</a>
+    <a href="#">Core Values</a>
+    <a href="#">PVC's Message</a>
+    <a href="#">Founder's Message</a>
+    <a href="#">Principal's Message</a>
+    <a href="#">Chairperson's Message</a> 
+  </div>
+</div>
+
+      <div class="dropdown">
+        <a href="#">Infrastructure ▼</a>
+        <div class="dropdown-content">
+          <a href="#">Classrooms</a>
+          <a href="#">Labs</a>
+          <a href="#">Library</a>
+          <a href="#">Activity Centres</a>
+          <a href="#">Sensory Garden</a>
+          <a href="#">Musical Garden</a>
+          <a href="#">Sports facilities</a>
+          <a href="#">Security features</a>
+          <a href="#">Infirmary</a>
+          <a href="#">Transport</a>
+          
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="#">Academics ▼</a>
+        <div class="dropdown-content">
+          <a href="#">Assessment Policy</a>
+          <a href="#">Remote learning</a>
+          <a href="#">School Planner</a>
+          <a href="#">Book List</a>
+        </div>
+      </div>
+
+
+      <div class="dropdown">
+        <a href="#">Co Curricular ▼</a>
+        <div class="dropdown-content">
+          <a href="#">Clubs</a>
+          <a href="#">Houses</a>
+          <a href="#">Performing Arts</a>
+          <a href="#">Trinity</a>
+          <a href="#">Skill Enhancement Activiti</a>
+        </div>
+      </div>
+
+
+      <div class="dropdown">
+        <a href="#">Gallery ▼</a>
+        <div class="dropdown-content">
+          <a href="#">Photo Gallery</a>
+          <a href="#">Video Gallery</a>
+          <a href="#">Event Media</a>
+          <a href="#">Visual Arts</a>
+          <a href="#">Virtual Tour</a>
+        </div>
+      </div>
+
+
+      <div class="dropdown">
+        <a href="#">Events and Celebration ▼</a>
+        <div class="dropdown-content">
+          <a href="#">Annual Day</a>
+          <a href="#">Sports Day</a>
+          <a href="#">A Day at DPS</a>
+          <a href="#">Christmas Carnival</a>
+          <a href="#">Fest-art and literature</a>
+          <a href="#">Investiture Ceremony</a>
+          <a href="#">Scholar Badge</a>
+          <a href="#">Camp</a>
+          <a href="#">Excursion and Trips</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="#">Achievements ▼</a>
+        <div class="dropdown-content">
+          <a href="#"> CBSE Result Class X and XII</a>
+          <a href="#">CBSE Toppers</a>
+          <a href="#">Student Placement</a>
+          <a href="#">Inter-school Competition</a>
+          <a href="#">News Coverage</a>
+          <a href="#">School Awards</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="#">Community ▼</a>
+        <div class="dropdown-content">
+          <a href="#">Prakriti</a>
+          <a href="#">Alumni</a>
+          <a href="#">CSR</a>
+          <a href="#">Well-Being Department</a>
+          <a href="#">Rotary Club</a>
+          <a href="#">Exchange Program</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Enquiry Form Section -->
+  <section class="enquiry-form">
+    <h2>ENQUIRY FORM For 2026-2027</h2>
+
+    <form action="#" method="post" class="form-container">
+
+        <h3>BASIC INFORMATION</h3>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="academic_year">Select Academic year *</label>
+            <select id="academic_year" name="academic_year" required>
+              <option value="">- Select -</option>
+              <option value="2026-2027">2026-2027</option>
+              <option value="2025-2026">2025-2026</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="class">Select Class *</label>
+            <select id="class" name="class" required>
+              <option value="">- Select -</option>
+              <option value="Nursery">Nursery</option>
+              <option value="KG">KG</option>
+              <option value="1">Class 1</option>
+              <option value="2">Class 2</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="child_name">Child's Name *</label>
+            <input type="text" id="child_name" name="child_name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="dob">Date of Birth *</label>
+            <input type="date" id="dob" name="dob" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="gender">Gender *</label>
+            <select id="gender" name="gender" required>
+              <option value="">- Select -</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="father_name">Father Name *</label>
+            <input type="text" id="father_name" name="father_name" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="mother_name">Mother Name *</label>
+            <input type="text" id="mother_name" name="mother_name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="address">Address *</label>
+            <input type="text" id="address" name="address" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="mobile">Primary Mobile No. *</label>
+            <input type="tel" id="mobile" name="mobile" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Primary Email Id *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group captcha">
+            <label>Type Verification Code</label><br>
+                <div class="captcha-box">
+          <span id="captchaText" class="captcha-img"></span>
+          <button type="button" class="refresh-btn" onclick="generateCaptcha()">↻</button>
+        </div>
+        <input type="hidden" id="captchaCode">
+        <input type="text" id="captchaInput" placeholder="Enter Captcha" required>
+      </div>
+
+        <div class="form-row form-submit">
+          <button type="submit" class="submit-btn">SUBMIT</button>
+        </div>
+    </form>
+  </section>
+
+
+  
+<!-- footer Section  -->
+  <footer class="footer">
+  <div class="footer-container">
+
+    <!-- Left: Logo + About -->
+    <div class="footer-about">
+      <img src="images/footetr-imgLogo.png" alt="DPS Logo" class="footer-logo">
+      <p>
+        The school represents the transformation of education globally. Driven by latest research,
+        the school uses innovative teaching methodology with special emphasis on extra-curricular
+        and co-curricular activities and communication skills. Values form an intrinsic part of the curriculum.
+        We strive towards building a positive attitude in our students with our rich and varied heritage.
+      </p>
+    </div>
+
+    <!-- Contact Us -->
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p><i class="fa-solid fa-location-dot"></i> Sector 102A, Dwarka Expy, Gurugram, Haryana 122006</p>
+      <p><i class="fa-solid fa-location-dot"></i> Sector 103, Dwarka Expy, Gurugram, Haryana 122006</p>
+      <p><i class="fa-solid fa-phone"></i> +91-8130314455, +91-8130514455</p>
+      <p><i class="fa fa-envelope"></i> info@dpsgurgaon.in</p>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Board Results</a></li>
+        <li><a href="#">Mobile Manual</a></li>
+        <li><a href="#">Parent Testimonials</a></li>
+        <li><a href="#">Summer Camp</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Follow Us -->
+    <div class="footer-follow">
+      <h3>Follow Us</h3>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.329464147289!2d77.032!3d28.459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19e9a2c2e5e1%3A0xdad6!2sDelhi%20Public%20School%20Gurgaon!5e0!3m2!1sen!2sin!4v123456789"
+        width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</footer>
+
+
+  <div class="footer-bottom">
+  <p>Powered by shauryasoft.com</p>
+</div>
+
+
+
+  <script src="js/form.js"></script>
+
+</body>
+</html>
