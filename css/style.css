@@ -285,19 +285,6 @@ body {
   border: 1px solid #023020;
 }
 
-/*  Responsive  */
-@media (max-width: 768px) {
-  .about-container {
-    flex-direction: column;
-  }
-
-  .about-image,
-  .about-content {
-    flex: unset;
-    width: 100%;
-    min-height: 50vh;
-  }
-}
 
 
 
@@ -528,7 +515,6 @@ body {
   color: #fff;
   border: 1px solid #023020;
   border-radius: 8px;
-  font-weight: bold;
   letter-spacing: 2px;
   cursor: pointer;
   transition: background 0.3s;
@@ -600,7 +586,6 @@ body {
 
 
 /*  Voice OF OUR COMMUNITY Section */
-/*  Voice OF OUR COMMUNITY Section */
 .community {
   text-align: center;
   padding: 50px 20px;
@@ -663,7 +648,7 @@ body {
 
 .card h3 {
   font-size: 18px;
-  color: inherit; /* 👈 inherit karega white/black */
+  color: inherit; 
   margin: 10px 0 5px;
 }
 
@@ -675,7 +660,7 @@ body {
 }
 
 .card:hover .role {
-  color: #ddd; /* 👈 smooth hover text */
+  color: #ddd;
 }
 
 .card .desc {
@@ -687,17 +672,16 @@ body {
 }
 
 .card:hover .desc {
-  color: #eee; /* 👈 smooth hover text */
+  color: #eee; 
 }
 
 .btn {
   display: inline-block;
   padding: 8px 16px;
-  border: 1px solid #fff;
+  border: 1px solid #023020;
   background: #fff;
   color: #0f3d2e;
   text-decoration: none;
-  border-radius: 5px;
   font-size: 14px;
   transition: all 0.3s ease;
 }
@@ -705,6 +689,7 @@ body {
 .btn:hover {
   background: #0f3d2e;
   color: #fff;
+  border: 1px solid #fff;
 }
 
 .view-all {
@@ -718,6 +703,12 @@ body {
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 6px;
+  border: 1px solid #0f3d2e;
+  cursor: pointer;
+}
+
+.btn-dark:hover {
+  background: #fff ;
 }
 
 
@@ -764,6 +755,7 @@ body {
 
 .blog-image {
   position: relative;
+  
 }
 
 .blog-image img {
@@ -812,19 +804,19 @@ body {
 }
 
 .btn-dark {
-  display: inline-block;
-  background: #0f3d2e;
+  padding: 12px 25px;
+  background: #133d2e;
   color: #fff;
-  padding: 10px 20px;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: all 0.3s ease;
+  border: 1px solid #023020;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
 .btn-dark:hover {
-  background: #0c2c22;
+  background: #fff;
+  color: #023020;
 }
-
 
 
 
