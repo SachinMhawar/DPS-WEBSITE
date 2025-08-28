@@ -129,7 +129,6 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;  /* container ko nicely fill kare */
-  /* z-index: 0;  (agar pehle -1 tha to hata do/0 kar do) */
 }
 
 
@@ -140,8 +139,10 @@ body {
   right: 20px;
   color: white;
   font-size: 14px;
+  font-weight: bold;
   text-decoration: none;
-  z-index: 2;
+  z-index: 9999;
+  margin-top: 5rem;
 }
 
 
