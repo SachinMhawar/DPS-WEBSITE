@@ -12,9 +12,8 @@
   <!-- Navbar Section -->
   <header class="navbar">
     <div class="navbar-left">
-      <img src="images/logo-img.png" alt="DPS Logo">
+      <img src="images/logo.png" span alt="DPS Logo"><span><h2>DPIS</h2></span>
     </div>
-
 
 
     <nav class="navbar-right">
@@ -146,12 +145,27 @@
   <!-- Main Content -->
   <main>
     <div class="video-container">
-      <video autoplay muted loop>
+      <!-- <video autoplay muted loop>
         <source src="images/bg-video.mp4" type="video/mp4">
-      </video>
+      </video> -->
+
+
+  <div class="scroll-wrapper">
+  <div class="scroll-container">
+    <img src="images/C4.jpeg" alt="">
+    <img src="images/C2.JPG.jpeg" alt="">
+    <img src="images/C3.JPG.jpeg" alt="">
+  
+
+    <!-- duplicate images for smooth infinite loop -->
+    <img src="images/C4.jpeg" alt="">
+    <img src="images/C2.JPG.jpeg" alt="">
+    <img src="images/C3.JPG.jpeg" alt="">
+  </div>
+</div>
+
 
       <a href="contect.html" class="contact-link">Contact Us</a>
-
       <!-- Floating Left Buttons -->
    <div class="floating-buttons">
   <a href="tel:+911234567890" class="call">
@@ -166,13 +180,67 @@
     <img src="images/whatsup-logo.png" alt="whatsapp">
   </a>
 </div>
-
-      <!-- Admission Enquiry Button -->
-      <a href="form.html" class="admission-btn">Admission Enquiry Form</a>
     </div>
+ 
 
 
 
+   <!-- Admission Enquiry Button -->
+    <button id="admissionBtn" class="btn">Admission Enquiry Form</button>
+  <!-- Admission Enquiry Popup Modal -->
+  <div id="admissionModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Admission Enquiry Form</h2>
+      <form id="popupAdmissionForm">
+        <label for="popup_academic_year">Select Academic Year *</label>
+        <select id="popup_academic_year" name="academic_year" required>
+          <option value="">- Select -</option>
+          <option value="2026-2027">2026-2027</option>
+          <option value="2025-2026">2025-2026</option>
+        </select>
+
+        <label for="popup_class">Select Class *</label>
+        <select id="popup_class" name="class" required>
+          <option value="">- Select -</option>
+          <option value="Nursery">Nursery</option>
+          <option value="KG">KG</option>
+          <option value="1">Class 1</option>
+          <option value="2">Class 2</option>
+        </select>
+
+        <label for="popup_child_name">Child's Name *</label>
+        <input type="text" id="popup_child_name" name="child_name" required>
+
+        <label for="popup_dob">Date of Birth *</label>
+        <input type="date" id="popup_dob" name="dob" required>
+
+        <label for="popup_gender">Gender *</label>
+        <select id="popup_gender" name="gender" required>
+          <option value="">- Select -</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+
+        <label for="popup_father_name">Father Name *</label>
+        <input type="text" id="popup_father_name" name="father_name" required>
+
+        <label for="popup_mother_name">Mother Name *</label>
+        <input type="text" id="popup_mother_name" name="mother_name" required>
+
+        <label for="popup_address">Address *</label>
+        <input type="text" id="popup_address" name="address" required>
+
+        <label for="popup_mobile">Primary Mobile No. *</label>
+        <input type="tel" id="popup_mobile" name="mobile" required>
+
+        <label for="popup_email">Primary Email Id *</label>
+        <input type="email" id="popup_email" name="email" required>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
 
 
 
@@ -182,31 +250,22 @@
 
     <!-- Left Image -->
     <div class="about-image">
-      <img src="images/main-image2.png" alt="School Building">
+      <img src="image" alt=" ">
     </div>
 
     <!-- Right Content -->
     <div class="about-content">
-      <img src="images/socity-logo.png" alt="socity-logo" class="logo-socity">
-      <h2>DPS SOCIETY</h2>
+      <img src="images" alt="" class="logo-socity">
+      <h2>DPIS SOCIETY</h2>
       <p>
-        The DPS Society is a non-profit, non-proprietary private educational organization.
-        This Global Network of over 200 English medium, co-educational, secular schools
-        provides education from Pre-Nursery/Nursery to Class XII. The DPS Family's with
-        its transcontinental identity, is not merely a list of institutions, persons or facts;
-        it is a network of values, systems and relationships.
+       The DPIS Society is a non-profit, non-proprietary private educational organization. This network of English medium, co-educational, secular schools provides education from Pre-Nursery/Nursery to Class XII. The DPIS Rewari Suncity school, as part of this family, is not merely an institution; it represents a network of values, systems, and relationships that shape holistic learning and growth.
       </p>
 
-      <a href="https://www.dpsfamily.org" class="about-link">www.dpsfamily.org</a>
+      <a href="https" class="about-link">www.dpsfamily.org</a>
 
       <h2>ABOUT US</h2>
       <p>
-        The school represents the transformation of education globally. Driven by latest research,
-        the school uses innovative teaching methodology with special emphasis on extra-curricular
-        and co-curricular activities and communication skills. Values form an intrinsic part of the
-        curriculum. We strive towards building a positive attitude in our students with our rich
-        and varied heritage.
-      </p>
+       The school represents the transformation of education at DPIS Rewari Suncity. Driven by the latest research, the school employs innovative teaching methodologies with special emphasis on extra-curricular and co-curricular activities, along with developing strong communication skills. Values form an intrinsic part of the curriculum. We strive to build a positive attitude in our students while nurturing them with our rich and varied heritage.</p>
 
       <a href="about.html" class="btn-read">Read More</a>
     </div>
@@ -272,7 +331,7 @@
       </div>
 
       <div class="feature-card">
-        <img src="images/feature-img3.jpeg" alt="Career Guidance & Alumni">
+        <img src="images/class-2.jpeg" alt="Career Guidance & Alumni">
         <div class="feature-title">CAREER GUIDANCE & ALUMNI</div>
     </div>
   </div>
@@ -286,8 +345,7 @@
   <div class="upper-heading">
     <h2>News & Events</h2>
     <p>
-      Delhi Public School, Sector 102A & 103 is located in the very heart of Gurugram 
-      on Dwarka Expressway and is under the control and support of the DPS Society New Delhi.
+      DPIS School, Rewari is located in the very heart of the city and is under the control and support of the DPIS Society, New Delhi.
     </p>
   </div>
 
@@ -296,7 +354,7 @@
     <div class="news-card">
       <div class="news-date">21-Jun-2025</div>
       <div class="news-img">
-        <img src="images/event-img1.jpeg" alt="International Yoga Day">
+        <img src="images/p1.jpg" alt="International Yoga Day">
       </div>
       <p>Pure Mathematics is, in its way, the poetry of logical ideas</p>
     </div>
@@ -304,7 +362,7 @@
     <div class="news-card">
       <div class="news-date">05-Sep-2024</div>
       <div class="news-img">
-        <img src="images/event-img2.jpeg" alt="Delhi Public School">
+        <img src="images/p2.jpg" alt="Delhi Public School">
       </div>
       <p>Good health is not something we can buy. However, it can be an extremely valuable savings account</p>
     </div>
@@ -312,7 +370,7 @@
     <div class="news-card">
       <div class="news-date">05-Aug-2024</div>
       <div class="news-img">
-        <img src="images/event-img3.jpeg" alt="Delhi Public School">
+        <img src="images/p5.jpg" alt="Delhi Public School">
       </div>
       <p>Basant Panchami Celebration</p>
     </div>
@@ -320,7 +378,7 @@
     <div class="news-card">
       <div class="news-date">05-Aug-2024</div>
       <div class="news-img">
-        <img src="images/event-img4.jpeg" alt="Delhi Public School">
+        <img src="images/p6.jpg" alt="Delhi Public School">
       </div>
       <p>International Yoga Day</p>
     </div>
@@ -360,11 +418,10 @@
       <div class="profile-pic">
         <img src="images/voice-img3.png" alt="Kritika Gill">
       </div>
-      <h3>Kritika Gill</h3>
+      <h3>XYZ</h3>
       <p class="role">(Student)</p>
       <p class="desc">
-        I'm Kritika Gill from Delhi Public School, Dwarka Expressway. I' m delighted 
-        to share that I achieved 99% in Grade 12. This success is a result of...
+        I'm Kritika Gill from DPIS, Rewari. I'm delighted to share that I achieved 99% in Grade 12. This success is a result of...
       </p>
       <a href="#" class="btn">Read More</a>
     </div>
@@ -375,11 +432,10 @@
       <div class="profile-pic">
         <img src="images/voice-img2.png" alt="Vinamrata Ranjan">
       </div>
-      <h3>Vinamrata Ranjan</h3>
+      <h3>XYZ</h3>
       <p class="role">(Student)</p>
       <p class="desc">
-        My name is Vinamrata Ranjan, and I' d like to share why I enjoy being at this school. 
-        The school is beautiful and creates a happy atmosphere whe...
+       My name is Vinamrata Ranjan, and I'd like to share why I enjoy being at DPIS, Rewari. The school is beautiful and creates a happy atmosphere whe...
       </p>
       <a href="#" class="btn">Read More</a>
     </div>
@@ -389,10 +445,10 @@
       <div class="profile-pic">
         <img src="images/voice-img5.png" alt="Riddhi Agarwal">
       </div>
-      <h3>Dr. Sunil George Mathew</h3>
+      <h3>XYZ</h3>
       <p class="role">(Parent)</p>
       <p class="desc">
-      I'm Dr. Sunil George Mathew, and my daughters have been students at DPS Dwarka Expressway since last year. I've had a highly positive experience ...
+      I'm Dr. Sunil George Mathew, and my daughters have been students at DPIS, Rewari since last year. I've had a highly positive experience...
       </p>
       <a href="#" class="btn">Read More</a>
     </div>
@@ -402,10 +458,10 @@
       <div class="profile-pic">
         <img src="images/voice-img4.png" alt="Ms. Lalithambika">
       </div>
-      <h3>Jasbir</h3>
+      <h3>XYZ</h3>
       <p class="role">(Parent)</p>
       <p class="desc">
-       Hello, I’m Jasbir, a parent of a Grade 10 student at DPS Dwarka Expressway. I'm delighted with the school's initiative to invite mothers to...
+       Hello, I’m Jasbir, a parent of a Grade 10 student at DPIS, Rewari. I'm delighted with the school's initiative to invite mothers to...
       </p>
       <a href="#" class="btn">Read More</a>
     </div>
@@ -414,99 +470,27 @@
   <div class="view-all">
     <a href="#" class="btn-dark">View All</a>
   </div>
-  
 </section>
 
 
 
-<!-- SCHOOL BLOGS SECTION  -->
-<section class="blogs">
-  <div class="container">
-    <h2 class="section-title">Our<br><span>SCHOOL BLOGS</span></h2>
-
-    <div class="blog-grid">
-
-      <!-- Big Blog Card -->
-      <div class="blog-card big">
-        <div class="blog-image">
-          <img src="images/school-img1.jpeg" alt="Career Guidance">
-          <div class="overlay">
-          </div>
-        </div>
-        <div class="blog-content">
-          <p class="meta">By Admin on : <span>10/10/2024</span></p>
-          <h4 class="blog-title">
-            How DPS Dwarka Expressway, Gurgaon Leads in Career Guidance for Students –
-            Empowering Future Success Through Personalized Counseling and Skill Development
-          </h4>
-          <p class="blog-desc">
-            When you consider the future of your child, you might wonder how important personalized
-            career guidance really is. DPS Dwarka Expressway, Gurgaon o... 
-            <a href="#">Read More</a>
-          </p>
-        </div>
-      </div>
-
-      <!-- Small Blog Cards -->
-      <div class="blog-card">
-        <div class="blog-image">
-          <img src="images/school-img2.jpeg" alt="Innovation">
-          <div class="overlay">
-            <h5>An Odyssey Of Innovation And Excellence</h5>
-          </div>
-        </div>
-      </div>
-
-      <div class="blog-card">
-        <div class="blog-image">
-          <img src="images/school-img3.jpeg" alt="Choose School">
-          <div class="overlay">
-            <h5>How To Choose The Right School...</h5>
-          </div>
-        </div>
-      </div>
-
-      <div class="blog-card">
-        <div class="blog-image">
-          <img src="images/school-img4.jpeg" alt="At Risk">
-          <div class="overlay">
-            <h5>How To Deal With At-Risk Behavior...</h5>
-          </div>
-        </div>
-      </div>
-
-      <div class="blog-card">
-        <div class="blog-image">
-          <img src="images/school-img5.jpeg" alt="Nursery">
-          <div class="overlay">
-            <h5>Choosing The Right Pre Nursery...</h5>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="view-all">
-      <a href="#" class="btn-dark">View All</a>
-    </div>
-  </div>
-</section>
 
 
 <!-- SOCIAL PRESENCE -->
 
   </main>
 
-
 <!-- footer Section  -->
-  <footer class="footer">
+<footer class="footer">
   <div class="footer-container">
 
     <!-- Left: Logo + About -->
     <div class="footer-about">
-      <img src="images/footetr-imgLogo.png" alt="DPS Logo" class="footer-logo">
+      <!-- <img src="images/logo.png" alt="DPIS Rewari Logo" class="footer-logo"> -->
+       <h1>DELHI PUBLIC INTERNATIONAL SCHOOL</h1>
+
       <p>
-        The school represents the transformation of education globally. Driven by latest research,
+        DPIS Rewari represents the transformation of education globally. Driven by the latest research,
         the school uses innovative teaching methodology with special emphasis on extra-curricular
         and co-curricular activities and communication skills. Values form an intrinsic part of the curriculum.
         We strive towards building a positive attitude in our students with our rich and varied heritage.
@@ -516,15 +500,14 @@
     <!-- Contact Us -->
     <div class="footer-contact">
       <h3>Contact Us</h3>
-      <p><i class="fa-solid fa-location-dot"></i> Sector 102A, Dwarka Expy, Gurugram, Haryana 122006</p>
-      <p><i class="fa-solid fa-location-dot"></i> Sector 103, Dwarka Expy, Gurugram, Haryana 122006</p>
-      <p><i class="fa-solid fa-phone"></i> +91-8130314455, +91-8130514455</p>
-      <p><i class="fa fa-envelope"></i> info@dpsgurgaon.in</p>
+      <p><i class="fa-solid fa-location-dot"></i> Suncity Township, Rewari, Haryana 123401</p>
+      <p><i class="fa-solid fa-phone"></i> +91-096713 66297, +91-096713 66297</p>
+      <p><i class="fa fa-envelope"></i> info@dpisrewari.in</p>
       <div class="social-icons">
         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="#"><i class="fa-brands fa-youtube"></i></a>
-      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
       </div>
     </div>
 
@@ -544,7 +527,7 @@
     <div class="footer-follow">
       <h3>Follow Us</h3>
       <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.329464147289!2d77.032!3d28.459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19e9a2c2e5e1%3A0xdad6!2sDelhi%20Public%20School%20Gurgaon!5e0!3m2!1sen!2sin!4v123456789"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.482237081059!2d76.6167!3d28.1973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d44f92f2a2d27%3A0x123456789abcdef!2sDPIS%20School%20Rewari!5e0!3m2!1sen!2sin!4v123456789"
         width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy">
       </iframe>
     </div>
@@ -552,8 +535,9 @@
 </footer>
 
 
+
   <div class="footer-bottom">
-  <p>Powered by shauryasoft.com</p>
+  <p>Powered by DPIS.com</p>
 </div>
 
 
